@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Currency_Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t76-B9-u9j">
+                                <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnk-BG-HAp">
+                                <rect key="frame" x="147" y="69" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpT-pC-cOq">
+                                <rect key="frame" x="138" y="389" width="59" height="30"/>
+                                <state key="normal" title="Convert "/>
+                                <connections>
+                                    <action selector="conVertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXc-l1-9qa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBy-Dn-xOT">
+                                <rect key="frame" x="220" y="194" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25H-Ti-6nG">
+                                <rect key="frame" x="51" y="194" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="China" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nop-2n-HHf">
+                                <rect key="frame" x="50" y="283" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyj-dr-eq0">
+                                <rect key="frame" x="52" y="240" width="32" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptt-54-CHm">
+                                <rect key="frame" x="50" y="329" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzO-GE-C7P">
+                                <rect key="frame" x="220" y="240" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGu-HU-Q0O">
+                                <rect key="frame" x="220" y="334" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbI-B3-IgO">
+                                <rect key="frame" x="220" y="291" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="t76-B9-u9j" firstAttribute="top" secondItem="Tnk-BG-HAp" secondAttribute="bottom" constant="55" id="2NV-1l-T6g"/>
+                            <constraint firstItem="25H-Ti-6nG" firstAttribute="trailing" secondItem="kyj-dr-eq0" secondAttribute="trailing" id="6Gk-EH-M6e"/>
+                            <constraint firstItem="Tnk-BG-HAp" firstAttribute="centerX" secondItem="cpT-pC-cOq" secondAttribute="centerX" id="8ik-Ie-kMf"/>
+                            <constraint firstItem="cpT-pC-cOq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="138" id="CZ4-UR-WfE"/>
+                            <constraint firstItem="t76-B9-u9j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CyI-KX-jKo"/>
+                            <constraint firstItem="Ptt-54-CHm" firstAttribute="top" secondItem="nop-2n-HHf" secondAttribute="bottom" constant="25" id="HPr-fD-pdo"/>
+                            <constraint firstItem="DGu-HU-Q0O" firstAttribute="top" secondItem="dbI-B3-IgO" secondAttribute="bottom" constant="22" id="INl-Xe-yRE"/>
+                            <constraint firstItem="kyj-dr-eq0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="IOI-aW-2gn"/>
+                            <constraint firstItem="xBy-Dn-xOT" firstAttribute="leading" secondItem="YzO-GE-C7P" secondAttribute="leading" id="JeG-Ke-Dr1"/>
+                            <constraint firstItem="YzO-GE-C7P" firstAttribute="leading" secondItem="dbI-B3-IgO" secondAttribute="leading" id="MWZ-oL-tT2"/>
+                            <constraint firstItem="nop-2n-HHf" firstAttribute="top" secondItem="kyj-dr-eq0" secondAttribute="bottom" constant="22" id="Pre-9S-QeT"/>
+                            <constraint firstItem="nop-2n-HHf" firstAttribute="leading" secondItem="Ptt-54-CHm" secondAttribute="leading" id="QoP-6N-1qT"/>
+                            <constraint firstItem="kyj-dr-eq0" firstAttribute="top" secondItem="25H-Ti-6nG" secondAttribute="bottom" constant="25" id="Scd-dg-NAQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cpT-pC-cOq" secondAttribute="bottom" constant="149" id="Slb-gw-rRc"/>
+                            <constraint firstItem="dbI-B3-IgO" firstAttribute="leading" secondItem="DGu-HU-Q0O" secondAttribute="leading" id="Xst-bC-hle"/>
+                            <constraint firstItem="25H-Ti-6nG" firstAttribute="top" secondItem="t76-B9-u9j" secondAttribute="bottom" constant="19" id="ffl-9z-6E7"/>
+                            <constraint firstItem="t76-B9-u9j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="g9i-Q2-hOW"/>
+                            <constraint firstItem="kyj-dr-eq0" firstAttribute="baseline" secondItem="YzO-GE-C7P" secondAttribute="baseline" id="k0H-lY-vw6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xBy-Dn-xOT" secondAttribute="trailing" constant="23" id="nxt-4I-Mpz"/>
+                            <constraint firstItem="Tnk-BG-HAp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="49" id="pJM-W1-M4l"/>
+                            <constraint firstItem="kyj-dr-eq0" firstAttribute="leading" secondItem="nop-2n-HHf" secondAttribute="leading" id="rnm-x2-1a6"/>
+                            <constraint firstItem="dbI-B3-IgO" firstAttribute="top" secondItem="YzO-GE-C7P" secondAttribute="bottom" constant="30" id="tjD-N8-aWw"/>
+                            <constraint firstItem="25H-Ti-6nG" firstAttribute="baseline" secondItem="xBy-Dn-xOT" secondAttribute="baseline" id="vL2-nd-SCu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CanadaResultLabel" destination="DGu-HU-Q0O" id="jud-mz-nu6"/>
+                        <outlet property="ChinaResultsLabel" destination="dbI-B3-IgO" id="Qgq-ei-iE2"/>
+                        <outlet property="EurResultLabel" destination="xBy-Dn-xOT" id="IPD-zJ-J2O"/>
+                        <outlet property="MexicoResltsLabel" destination="YzO-GE-C7P" id="ceQ-0k-VBq"/>
+                        <outlet property="convertButon" destination="cpT-pC-cOq" id="zOB-x0-yM3"/>
+                        <outlet property="dollarAmountTextfield" destination="t76-B9-u9j" id="uCn-cR-86o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="206" y="293"/>
+        </scene>
+    </scenes>
+</document>

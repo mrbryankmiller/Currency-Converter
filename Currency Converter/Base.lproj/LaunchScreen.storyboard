@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="currency" translatesAutoresizingMaskIntoConstraints="NO" id="TUA-8A-ots">
+                                <rect key="frame" x="157" y="151" width="319" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="ZuI-Ah-geH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TUA-8A-ots" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="131" id="icp-6E-45U"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="TUA-8A-ots" secondAttribute="bottom" constant="321" id="lLz-kL-t0o"/>
+                            <constraint firstItem="TUA-8A-ots" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tKV-WW-aSp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="currency" width="686" height="116"/>
+    </resources>
+</document>
